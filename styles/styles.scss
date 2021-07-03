@@ -88,7 +88,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 140px;
+    height: 120px;
     width: auto;
     background-color: $navBackground;
     padding-top: 40px;
@@ -208,8 +208,8 @@ nav{
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: 600;
+    font-size: .75rem;
+    font-weight: 700;
     text-decoration: none;
     cursor: pointer;
     width: 100%;
@@ -252,6 +252,7 @@ nav{
     overflow: hidden;
     background-size: cover;
     height: 100%;
+    min-height: 400px;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
@@ -547,8 +548,8 @@ nav{
     background-color: darkgray;
 }
 .c9-rmit{
-    background-image: url(../images/headway-5QgIuuBxKwM-unsplash.jpg);
-    background-size: 80vw;
+    background-image: url(../images/med-headway-5QgIuuBxKwM-unsplash.jpg);
+    background-size: clamp(200px,86%,400px);
     background-position: 50% 50%;
     background-color: darkgray;
 }
@@ -776,6 +777,12 @@ nav{
     margin-top: 10px;
 }
 
+.contact-page-link{
+    color:black;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
 
 
 
@@ -790,12 +797,16 @@ footer{
     border-top-width: 1px;
     border-top-style: solid ;
     background-color: rgb(245, 245, 245);
-    color: rgb(56, 56, 56);
     @include displayFlex-row()
 }
 
 .footer-link{
     list-style-type: none;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
 }
 
 .footer-link li{
@@ -892,6 +903,10 @@ nav{
 .banner{
     grid-area:banner;
     background-position: 70% 30%;
+}
+
+.banner-rmit{
+    background-position: 70% 90%;
 }
 
 .c1{
@@ -1117,9 +1132,8 @@ nav{
     nav{
         grid-area: nav;
         height: 15vh;
-        padding-top: 20px;
+        padding-top: 30px;
     }
-
 
     .nav-logo{
         font-size: 2rem;        
@@ -1129,6 +1143,27 @@ nav{
         font-size: 1.5rem;        
     }
 
+    .banner{
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .banner-title{
+        font-size: clamp(1.8rem, 3.3vw, 3.8rem);
+        padding: 0 10px;
+    }
+
+    .banner-contact{
+        background-image: url(../images/med-adam-solomon-WHUDOzd5IYU-unsplash.jpg);
+        background-position: 70% 30%;
+    }
+
+    .menu-slider-list a{
+        font-size: .95rem;
+        font-weight: 700;
+    }
+
+
     .c13-walley{ /*<=== MOODBOARDS===>*/
         background-image: url(../images/C13-Sml-Walley.png);
         background-size: contain;
@@ -1137,15 +1172,6 @@ nav{
     }
     
 
-
-    .banner{
-        padding: 20px;
-    }
-
-    .banner-title{
-        font-size: clamp(1.8rem, 3.3vw, 3.8rem);
-        padding: 0 10px;
-    }
 
 }
 
