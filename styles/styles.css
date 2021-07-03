@@ -1231,6 +1231,12 @@ footer {
 /*<======= MEDIA QUERY WIDTH =========================================>*/
 /*<======= MEDIA QUERY WIDTH =========================================>*/
 @media only screen and (max-width: 580px) {
+  .nav-logo {
+    font-size: 2rem;
+  }
+  .reduced-nav-logo {
+    font-size: 1.5rem;
+  }
   .c13-walley {
     /*<=== MOODBOARDS===>*/
     background-image: url(../images/C13-Sml-Walley.png);
