@@ -1257,8 +1257,8 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: nav;
-    height: 12vh;
-    padding-top: 30px;
+    height: 14vh;
+    padding-top: 35px;
     padding-bottom: 10px;
     margin-bottom: 30px;
   }
