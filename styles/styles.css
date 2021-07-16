@@ -62,12 +62,12 @@ nav {
           align-items: center;
   width: auto;
   background-color: white;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 35px;
+  padding-bottom: 8px;
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .nav-logo-link {
@@ -84,14 +84,14 @@ nav {
 
 .nav-logo {
   font-family: 'Lato', sans-serif;
-  font-size: clamp(2.2rem, 20vw, 2.5rem);
+  font-size: clamp(2rem, 20vw, 2.4rem);
   font-weight: 900;
   letter-spacing: 1.3px;
   height: 100%;
 }
 
 .reduced-nav-logo {
-  font-size: 1.6rem;
+  font-size: clamp(2rem, 20vw, 2.4rem);
 }
 
 .registered-symbol {
@@ -1257,17 +1257,14 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: nav;
-    height: 13vh;
+    height: 12vh;
     min-height: 100px;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
-  .nav-logo {
-    font-size: 2.4rem;
-  }
-  .reduced-nav-logo {
-    font-size: 1.8rem;
+  .nav-logo, .reduced-nav-logo {
+    font-size: 1.9rem;
   }
   .banner {
     padding: 20px;
