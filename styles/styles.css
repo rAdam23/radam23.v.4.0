@@ -1249,8 +1249,8 @@ footer {
 /*<======= MEDIA QUERY WIDTH =========================================>*/
 @media only screen and (max-width: 580px) {
   .home-page-container {
-    -ms-grid-rows: auto 73vh;
-        grid-template-rows: auto 73vh;
+    -ms-grid-rows: auto 75vh;
+        grid-template-rows: auto 75vh;
   }
   nav {
     -ms-grid-row: 1;
@@ -1259,7 +1259,7 @@ footer {
     grid-area: nav;
     height: 14vh;
     padding-top: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 30px;
   }
   .nav-logo {
