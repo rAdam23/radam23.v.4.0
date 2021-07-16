@@ -67,7 +67,7 @@ nav {
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .nav-logo-link {
@@ -1257,8 +1257,7 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: nav;
-    height: 15vh;
-    padding-top: 30px;
+    height: 13vh;
   }
   .nav-logo {
     font-size: 1.8rem;
