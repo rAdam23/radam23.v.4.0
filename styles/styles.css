@@ -1257,13 +1257,16 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: nav;
-    height: 13vh;
+    height: 12vh;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
   }
   .nav-logo {
     font-size: 2.4rem;
   }
   .reduced-nav-logo {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .banner {
     padding: 20px;
