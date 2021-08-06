@@ -35,8 +35,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto 80vh;
-      grid-template-rows: auto 80vh;
+  -ms-grid-rows: 10vh 85vh;
+      grid-template-rows: 10vh 85vh;
       grid-template-areas: "nav nav nav nav nav nav" "banner banner banner banner banner banner";
   margin: auto;
   padding: 0 30px;
@@ -62,12 +62,11 @@ nav {
           align-items: center;
   width: auto;
   background-color: white;
-  padding-top: 35px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   border-bottom-color: black;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  margin-bottom: 35px;
+  border-bottom-width: 0;
+  margin-bottom: 0;
 }
 
 .nav-logo-link {
@@ -84,14 +83,14 @@ nav {
 
 .nav-logo {
   font-family: 'Lato', sans-serif;
-  font-size: clamp(2rem, 20vw, 2.4rem);
+  font-size: clamp(1.3rem, 20vw, 1.7rem);
   font-weight: 900;
   letter-spacing: 1.3px;
   height: 100%;
 }
 
 .reduced-nav-logo {
-  font-size: clamp(2rem, 20vw, 2.4rem);
+  font-size: clamp(1.3rem, 20vw, 1.7rem);
 }
 
 .registered-symbol {
@@ -252,7 +251,7 @@ nav {
 }
 
 .banner-cs {
-  height: clamp(300px, 80vw, 460px);
+  height: clamp(25rem, 80vw, 30rem);
 }
 
 .disclaimer-text-wrap {
@@ -410,8 +409,8 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  -ms-grid-rows: 10vh auto auto auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: 10vh auto auto auto auto auto auto auto auto auto auto auto;
       grid-template-areas: "nav nav nav nav nav nav" "banner banner banner banner banner banner" "c1 c1 c2 c2 c3 c3" "c4t c4t c4 c4 c4 c4" "c6 c6 c6 c6 c6 c6" "c7 c7 c8 c8 c9 c9" "c7t c7t c8t c8t c9t c9t" "c13 c13 c13 c13 c14 c14" "c13t c13t c13t c13t c14t c14t" "c15t c15t c15 c15 c15 c15" "c16t c16t c16 c16 c16 c16" "footer footer footer footer footer footer";
   margin: auto;
   width: 100%;
@@ -985,8 +984,8 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    -ms-grid-rows: 10vh auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: 10vh auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
         grid-template-areas: "nav nav nav nav nav nav" "banner banner banner banner banner banner" "c1 c1 c1 c1 c1 c1" "c2 c2 c2 c2 c2 c2" "c3 c3 c3 c3 c3 c3" "c4 c4 c4 c4 c4 c4" "c4t c4t c4t c4t c4t c4t" "c6 c6 c6 c6 c6 c6" "c7 c7 c7 c7 c7 c7" "c7t c7t c7t c7t c7t c7t" "c8 c8 c8 c8 c8 c8" "c8t c8t c8t c8t c8t c8t" "c9 c9 c9 c9 c9 c9" "c9t c9t c9t c9t c9t c9t" "c13 c13 c13 c13 c13 c13" "c13t c13t c13t c13t c13t c13t " "c14 c14 c14 c14 c14 c14" "c14t c14t c14t c14t c14t c14t " "c15 c15 c15 c15 c15 c15" "c15t c15t c15t c15t c15t c15t" "c16 c16 c16 c16 c16 c16" "c16t c16t c16t c16t c16t c16t" ". . . . . .";
     margin: auto;
     padding: 0 30px;
@@ -1249,24 +1248,22 @@ footer {
 /*<======= MEDIA QUERY WIDTH =========================================>*/
 @media only screen and (max-width: 580px) {
   .home-page-container {
-    -ms-grid-rows: auto 71vh;
-        grid-template-rows: auto 71vh;
+    -ms-grid-rows: 10vh 80vh;
+        grid-template-rows: 10vh 80vh;
   }
   nav {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: nav;
-    height: 12vh;
+    height: 10vh;
+    min-height: 5rem;
+    z-index: 100;
     min-height: 100px;
-    padding-top: 35px;
     padding-bottom: 0px;
-    margin-bottom: 35px;
-  }
-  .nav-logo, .reduced-nav-logo {
-    font-size: 2.1rem;
   }
   .banner {
+    top: 10vh;
     padding: 20px;
     min-height: auto;
   }
