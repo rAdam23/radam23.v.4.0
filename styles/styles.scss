@@ -91,6 +91,7 @@ nav{
     align-items: center;
     width: auto;
     background-color: $navBackground;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-bottom-color: black;
     border-bottom-style: solid;
@@ -1130,14 +1131,11 @@ nav{
 
 @media only screen and (max-width: 580px) {
 
-    .home-page-container{
-        grid-template-rows: 11vh 80vh;
-    }
 
     nav{
         grid-area: nav;
         background-color: white;
-        padding-bottom: 0px;
+        padding-bottom: 10px;
     }
 
     .banner{
