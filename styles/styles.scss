@@ -20,6 +20,7 @@
 /*<=======GLOBAL VARIABLES =========>*/  
 /*<=======GLOBAL VARIABLES =========>*/  
 
+    $pageBackground: rgb(187, 187, 187);
     $navBackground: rgb(255, 255, 255);
     $logo: black;
 
@@ -68,7 +69,7 @@
     .home-page-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 80vh;
+        grid-template-rows: 10vh 85vh;
         grid-template-areas: 
         "nav nav nav nav nav nav"
         "banner banner banner banner banner banner";
@@ -88,10 +89,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
     width: auto;
     background-color: $navBackground;
-    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    margin-bottom: 0;
 }
     .nav-logo-link{
         @include displayFlex-row();
@@ -101,14 +105,14 @@ nav{
     
     .nav-logo{
         font-family: 'Lato', sans-serif;
-        font-size: 3.6rem;
+        font-size: clamp(1.3rem, 20vw, 1.7rem);
         font-weight: 900;
         letter-spacing: 1.3px;
         height: 100%;
     }
 
     .reduced-nav-logo{
-        font-size: 1.6rem;
+        font-size: clamp(1.3rem, 20vw, 1.7rem);
     }
 
     .registered-symbol{
@@ -235,7 +239,7 @@ nav{
 }
 
 .banner-cs{
-    height: clamp(300px, 80vw, 460px);
+    height: clamp(25rem, 80vw, 30rem);
 }
 
 .disclaimer-text-wrap{
@@ -351,7 +355,7 @@ nav{
 .cs-page-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 10vh auto auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas: 
     "nav nav nav nav nav nav"
     "banner banner banner banner banner banner"
@@ -854,7 +858,7 @@ footer{
 .cs-page-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 10vh auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas: 
     "nav nav nav nav nav nav"
     "banner banner banner banner banner banner"
@@ -1126,30 +1130,26 @@ nav{
 @media only screen and (max-width: 580px) {
 
     .home-page-container{
-        grid-template-rows: auto 75vh;
+        grid-template-rows: 10vh 80vh;
     }
 
     nav{
         grid-area: nav;
-        height: 15vh;
-        padding-top: 30px;
-    }
-
-    .nav-logo{
-        font-size: 2rem;        
-    }
-
-    .reduced-nav-logo{
-        font-size: 1.5rem;        
+        height: 10vh;
+        min-height: 5rem;
+        z-index: 100;
+        min-height: 100px;
+        padding-bottom: 0px;
     }
 
     .banner{
+        top:10vh;
         padding: 20px;
         min-height: auto;
     }
 
     .banner-title{
-        font-size: clamp(1.8rem, 3.3vw, 3.8rem);
+        font-size: clamp(1.7rem, 3.3vw, 3.8rem);
         padding: 0 10px;
     }
 
